@@ -1,50 +1,57 @@
-var onRun = function(context) {
+var setEven = function(context) {
 
+  var app = NSApplication.sharedApplication()
   var doc = context.document
-var plugin = context.plugin
-var page = doc.currentPage
-var mode = "half" //half, threequarters, widescreen
-var coef = 1
+  var plugin = context.plugin
+  var page = doc.currentPage
+  var mode = "even" //half, threequarters, widescreen
+  var coef = 1
 
-var selection = context.selection
-for (var i=0; i < selection.count(); i++) {
+  var selection = context.selection
+  var sl = selection.count()
 
-    var layer  = selection[i]
-    var height = layer.absoluteRect().height()
-    var width = layer.absoluteRect().width()
+  if (sl != 0) {
 
-    if (mode == "rectangular") {
+    for (var i=0; i < sl; i++) {
+
+      var layer  = selection[i]
+      var height = layer.absoluteRect().height()
+      var width = layer.absoluteRect().width()
+
+      if (mode == "even") {
         if (height > width)
         {
-            layer.absoluteRect().setWidth(height)
+          layer.absoluteRect().setWidth(height)
         }
         else if (width > height)
         {
-            layer.absoluteRect().setHeight(width)
+          layer.absoluteRect().setHeight(width)
         }
-    }
-    else {
+      }
+      else {
 
         if (mode == "half")
         {
-            coef = 0.5
+          coef = 0.5
         }
         else if (mode == "threequarters")
         {
-            coef = 0.75
+          coef = 0.75
         }
         else if (mode == "widescreen")
         {
-            coef = 9/16
+          coef = 9/16
         }
 
         var normalizedWidth = Math.floor(width * coef)
         layer.absoluteRect().setHeight(normalizedWidth)
 
+      }
+
     }
 
-    //log(layer)
-
-}
+  } else {
+    app.displayDialog_withTitle("Please, select at least one layer", "Nothing is selected")
+  }
 
 };

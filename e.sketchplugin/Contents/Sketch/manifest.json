@@ -3,16 +3,40 @@
   "commands" : [
     {
       "script" : "script.cocoascript",
-      "handler" : "onRun",
-      "shortcut" : "ctrl alt f",
-      "name" : "Formr",
-      "identifier" : "formr"
+      "handler" : "setEven",
+      "shortcut" : "ctrl alt e",
+      "name" : "Even",
+      "identifier" : "even"
     },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "setHalf",
+      "shortcut" : "",
+      "name" : "Half",
+      "identifier" : "half"
+    },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "setThreeQuarters",
+      "shortcut" : "",
+      "name" : "Threequarters",
+      "identifier" : "threequarters"
+    },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "setWidescreen",
+      "shortcut" : "",
+      "name" : "Widescreen",
+      "identifier" : "widescreen"
+    }
   ],
   "menu": {
     "isRoot": false,
     "items": [
-      "Formr",
+      "even",
+      "half",
+      "threequarters",
+      "widescreen"
     ],
   },
   "identifier" : "com.example.sketch.formr",
