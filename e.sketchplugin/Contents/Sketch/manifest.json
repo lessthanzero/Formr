@@ -1,0 +1,24 @@
+{
+  "author" : "Alexander Katin",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "ctrl alt f",
+      "name" : "Formr",
+      "identifier" : "formr"
+    },
+  ],
+  "menu": {
+    "isRoot": false,
+    "items": [
+      "Formr",
+    ],
+  },
+  "identifier" : "com.example.sketch.formr",
+  "version" : "1.0",
+  "compatibleVersion": "3.7",
+  "description" : "Sketch plugin that helps to maintain simple proportions of shapes",
+  "authorEmail" : "aleksandr.katin@gmail.com",
+  "name" : "Formr"
+}
