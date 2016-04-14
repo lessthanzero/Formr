@@ -2,12 +2,13 @@ var onRun = function(context) {
 
   var doc = context.document
   var plugin = context.plugin
-  var page = [doc currentPage]
+  var page = doc.currentPage
 
   var selection = context.selection
   for (var i=0; i<selection.count(); i++) {
     var layer = selection[i]
-    log('layer ' + layer.name + ' is selected.')
+    log(layer.absoluteRect().setHeight("100"))
+
   }
 
 };
