@@ -2,7 +2,7 @@
 
 Sketch plugin that helps to maintain simple layer proportions.  
 
-Simple proportions of shapes in most situations look aesthetically better than random.
+Simple proportions of shapes in most cases look aesthetically better than random.
 For now it supports even (1/1), 2/1, 4/3 and 16/9 proportions. More options coming soon.  
 
 *Formr* supports layers, artboards, and multiple selection.  
