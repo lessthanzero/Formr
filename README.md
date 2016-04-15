@@ -13,7 +13,7 @@ To even out proportions press `ctrl+alt+e`. For other options, as for now, pleas
 
 ## Screenshot  
 
-(screenshot.png)  
+(https://github.com/lessthanzero/Formr/blob/master/screenshot.png)  
 
 ## Installation  
 
