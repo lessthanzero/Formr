@@ -16,5 +16,6 @@ To even out proportions press `ctrl+alt+e`. For other options, as for now, pleas
 ![screenshot](https://github.com/lessthanzero/Formr/blob/master/screenshot.png)  
 
 ## Installation  
+Download and unpack .zip file.  
 
-Install as usual or manually put into _path-to-user/Library/Application Support/com.bohemiancoding.sketch3/Plugins_ folder
+Install by double-clicking _formr.sketchplugin_ file or manually put it into _path-to-user/Library/Application Support/com.bohemiancoding.sketch3/Plugins_ folder
