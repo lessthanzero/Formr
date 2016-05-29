@@ -7,6 +7,8 @@ For now it supports even (1/1), 2/1, 4/3 and 16/9 proportions. More options comi
 
 *Formr* supports layers, artboards, and multiple selection.  
 
+__Works with Sketch 3.8+__
+
 ## Shortcuts  
 
 To even out proportions press `ctrl+alt+e`. For other options, as for now, please use plugin menu.  

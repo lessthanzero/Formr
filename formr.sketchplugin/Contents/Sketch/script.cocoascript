@@ -37,6 +37,26 @@ com.lessthanzero.extend({
   setWidescreen: function() {
     this.universal("widescreen")
   },
+  parseName: function(layer) {
+    var name = layer.name();
+    var nameKey = name.split("::");
+    var proportion = nameKey[1];
+    if (proportion) {
+        print(proportion);
+        propParts = proportion.split("/");
+        if (propParts) {
+            print(propParts[0] + " " + propParts[1]);
+            var upper = parseInt(propParts[0], 10);
+            var lower = parseInt(propParts[1], 10);
+            if (upper && lower) {
+                var detectedProportion = upper/lower;
+                print( "Okay! Detected proportion " + detectedProportion );
+            } else {
+                print("Incorrect proportion!");
+            }
+        }
+    }
+  },
   universal: function(mode) {
     var coef = 1
     var sl = this.selection.count()
@@ -86,6 +106,11 @@ com.lessthanzero.extend({
     }
   }
 })
+
+function parseName(context) {
+  com.lessthanzero.init(context, true);
+  com.lessthanzero.parseName();
+}
 
 function setEven(context) {
     com.lessthanzero.init(context, true);
