@@ -14,7 +14,7 @@ __Works with Sketch 3.8+__
 ## Shortcuts  
 
 To even out proportions press `ctrl+alt+e`.
-To use custom proportion via layer name press `ctrl+alt+shift+e`. 
+To use custom proportion via layer name press `ctrl+alt+shift+e`.
 
 For other options, as for now, please use plugin menu.  
 
@@ -23,6 +23,6 @@ For other options, as for now, please use plugin menu.
 ![screenshot](https://github.com/lessthanzero/Formr/blob/master/screenshot.png)  
 
 ## Installation  
-Download and unpack .zip file.  
+Download and unpack [.zip file](https://github.com/lessthanzero/Formr/blob/master/formr-2.0.zip).  
 
 Install by double-clicking _formr.sketchplugin_ file or manually put it into _path-to-user/Library/Application Support/com.bohemiancoding.sketch3/Plugins_ folder
