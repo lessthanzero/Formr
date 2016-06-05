@@ -28,6 +28,13 @@
       "shortcut" : "",
       "name" : "Widescreen",
       "identifier" : "widescreen"
+    },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "setCustom",
+      "shortcut" : "ctrl alt shift e",
+      "name" : "Parse Layer Name",
+      "identifier" : "setcustom"
     }
   ],
   "menu": {
@@ -36,7 +43,8 @@
       "even",
       "half",
       "threequarters",
-      "widescreen"
+      "widescreen",
+      "setcustom"
     ],
   },
   "identifier" : "com.example.sketch.formr",
