@@ -3,7 +3,9 @@
 Sketch plugin that helps to maintain simple layer proportions.  
 
 Simple proportions of shapes in most cases look aesthetically better than random.
-For now it supports even (1/1), 2/1, 4/3 and 16/9 proportions. More options coming soon.  
+For now it supports even (1/1), 2/1, 4/3 and 16/9 proportions.
+
+You can also use custom proportions by adding `::prop` to the layer/artboard name where "prop" can be any simple fraction and than pressing `ctrl+alt+shift+e`. For example, adding `::1/2` lo my 100×100 layer name and calling the plugin gets me 50×100 layer.
 
 *Formr* supports layers, artboards, and multiple selection.  
 
