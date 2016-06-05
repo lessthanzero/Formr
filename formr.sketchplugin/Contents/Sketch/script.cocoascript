@@ -53,7 +53,7 @@ com.lessthanzero.extend({
         var width = layer.absoluteRect().width()
 
         if (mode == "custom") {
-          var newProportion = parseName(layer)
+          var newProportion = this.parseName(layer)
           layer.absoluteRect().setWidth(width * newProportion)
         } else {
 
@@ -93,7 +93,7 @@ com.lessthanzero.extend({
       }
 
     } else {
-      app.displayDialog_withTitle("Please, select at least one layer", "Nothing is selected")
+      this.app.displayDialog_withTitle("Please, select at least one layer", "Nothing is selected")
     }
   },
   parseName: function(layer) {
@@ -112,7 +112,7 @@ com.lessthanzero.extend({
                 //print( "Okay! Detected proportion " + detectedProportion );
                 return detectedProportion;
             } else {
-                app.displayDialog_withTitle("Please, use only integers in simple fraction. Like '::1/2'", "Incorrect proportion!")
+                this.app.displayDialog_withTitle("Please, use only integers in simple fraction. Like '::1/2'", "Incorrect proportion!")
                 //print("Incorrect proportion!");
             }
         }

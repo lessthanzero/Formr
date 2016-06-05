@@ -31,10 +31,10 @@
     },
     {
       "script" : "script.cocoascript",
-      "handler" : "parseName",
+      "handler" : "setCustom",
       "shortcut" : "",
       "name" : "Parse Layer Name",
-      "identifier" : "parsename"
+      "identifier" : "setcustom"
     }
   ],
   "menu": {
@@ -44,7 +44,7 @@
       "half",
       "threequarters",
       "widescreen",
-      "parsename"
+      "setcustom"
     ],
   },
   "identifier" : "com.example.sketch.formr",
