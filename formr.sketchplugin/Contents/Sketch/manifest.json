@@ -32,7 +32,7 @@
     {
       "script" : "script.cocoascript",
       "handler" : "setCustom",
-      "shortcut" : "",
+      "shortcut" : "ctrl alt shift e",
       "name" : "Parse Layer Name",
       "identifier" : "setcustom"
     }
