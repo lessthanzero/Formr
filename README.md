@@ -13,7 +13,10 @@ __Works with Sketch 3.8+__
 
 ## Shortcuts  
 
-To even out proportions press `ctrl+alt+e`. For other options, as for now, please use plugin menu.  
+To even out proportions press `ctrl+alt+e`.
+To use custom proportion via layer name press `ctrl+alt+shift+e`. 
+
+For other options, as for now, please use plugin menu.  
 
 ## Screenshot  
 
