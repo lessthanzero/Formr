@@ -6,89 +6,81 @@ com.lessthanzero = {
   page: undefined,
   pages: undefined,
   init: function(context, currentIsArtboard) {
-        this.app = NSApplication.sharedApplication()
-        this.context = context
-        this.document = context.document
-        this.command = context.command
-        this.selection = context.selection
-        this.pages = this.document.pages()
-        this.page = this.document.currentPage()
+    this.app = NSApplication.sharedApplication();
+    this.context = context;
+    this.document = context.document;
+    this.command = context.command;
+    this.selection = context.selection;
+    this.pages = this.document.pages();
+    this.page = this.document.currentPage();
   },
   extend: function(options, target) {
-      var target = target || this;
+    var target = target || this;
 
-      for ( var key in options ){
-          target[key] = options[key]
-      }
-      return target;
+    for (var key in options) {
+      target[key] = options[key];
+    }
+    return target;
   }
 }
 
 com.lessthanzero.extend({
   setEven: function() {
-    this.universal("even")
+    this.universal("even");
   },
   setHalf: function() {
-    this.universal("half")
+    this.universal("half");
   },
   setThreeQuarters: function() {
-    this.universal("threequarters")
+    this.universal("threequarters");
   },
   setWidescreen: function() {
-    this.universal("widescreen")
+    this.universal("widescreen");
   },
   setCustom: function() {
-    this.universal("custom")
+    this.universal("custom");
   },
   universal: function(mode) {
-    var coef = 1
-    var sl = this.selection.count()
+
+    var coef = 1;
+    var sl = this.selection.count();
 
     if (sl != 0) {
 
       for (var i = 0; i < sl; i++) {
 
-        var layer  = this.selection[i]
-        var height = layer.absoluteRect().height()
-        var width = layer.absoluteRect().width()
+        var layer  = this.selection[i];
+        var height = layer.absoluteRect().height();
+        var width = layer.absoluteRect().width();
 
         if (mode == "custom") {
-          var newProportion = this.parseName(layer)
-          layer.absoluteRect().setWidth(width * newProportion)
+          var newProportion = this.parseName(layer);
+          layer.absoluteRect().setWidth(height * newProportion);
         } else {
 
           if (mode == "even") {
-          if (height > width)
-          {
-          layer.absoluteRect().setWidth(height)
-          }
-          else if (width > height)
-          {
-          layer.absoluteRect().setHeight(width)
-          }
-          }
-          else {
 
-          if (mode == "half")
-          {
-          coef = 0.5
-          }
-          else if (mode == "threequarters")
-          {
-          coef = 0.75
-          }
-          else if (mode == "widescreen")
-          {
-          coef = 9/16
-          }
+            if (height > width) {
+              layer.absoluteRect().setWidth(height);
+            } else if (width > height) {
+              layer.absoluteRect().setHeight(width);
+            }
 
-          var normalizedWidth = Math.floor(width * coef)
-          layer.absoluteRect().setHeight(normalizedWidth)
+          } else {
+
+            if (mode == "half") {
+              coef = 0.5;
+            } else if (mode == "threequarters") {
+              coef = 0.75;
+            } else if (mode == "widescreen") {
+              coef = 0.5625;
+            }
+            var normalizedWidth = Math.floor(width * coef)
+            layer.absoluteRect().setHeight(normalizedWidth)
 
           }
 
         }
-
 
       }
 
@@ -101,34 +93,35 @@ com.lessthanzero.extend({
     var nameKey = name.split("::");
     var proportion = nameKey[1];
     if (proportion) {
-        print(proportion);
+
         propParts = proportion.split("/");
         if (propParts) {
-            print(propParts[0] + " " + propParts[1]);
+
             var upper = parseInt(propParts[0], 10);
             var lower = parseInt(propParts[1], 10);
             if (upper && lower) {
                 var detectedProportion = upper/lower;
-                //print( "Okay! Detected proportion " + detectedProportion );
+                print( "Okay! Detected proportion " + detectedProportion );
                 return detectedProportion;
             } else {
                 this.app.displayDialog_withTitle("Please, use only integers in simple fraction. Like '::1/2'", "Incorrect proportion!")
                 //print("Incorrect proportion!");
             }
+
         }
+
     }
   }
 })
 
-
 function setEven(context) {
-    com.lessthanzero.init(context, true);
-    com.lessthanzero.setEven();
+  com.lessthanzero.init(context, true);
+  com.lessthanzero.setEven();
 }
 
 function setHalf(context) {
-    com.lessthanzero.init(context, true);
-    com.lessthanzero.setHalf();
+  com.lessthanzero.init(context, true);
+  com.lessthanzero.setHalf();
 }
 
 function setThreeQuarters(context) {
