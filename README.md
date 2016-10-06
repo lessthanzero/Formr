@@ -35,5 +35,5 @@ For other options, as for now, please use plugin menu.
 
 ### Manually  
 
-1. Download and unpack [zip](https://github.com/lessthanzero/Formr/blob/master/formr-2.0.zip).  
+1. Download and unpack [zip](https://github.com/lessthanzero/Formr/blob/master/formr-2.1.zip).  
 2. Install by double-clicking _formr.sketchplugin_ file or by manually putting it into _path-to-user/Library/Application Support/com.bohemiancoding.sketch3/Plugins_ folder.
