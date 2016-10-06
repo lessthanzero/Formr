@@ -13,7 +13,7 @@ __Works with Sketch 40+__
 
 ## Shortcuts  
 
-1. To even out proportions press `ctrl+alt+e`
+1. To even out proportions press `ctrl+alt+shift+e`
 2. To use 2:1 proportion press `ctrl+alt+shift+h`
 3. To use 4:3 proportion press `ctrl+alt+shift+j`
 4. To use 4:3 proportion press `ctrl+alt+shift+k`
