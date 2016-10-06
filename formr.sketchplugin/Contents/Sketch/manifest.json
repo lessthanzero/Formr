@@ -4,35 +4,35 @@
     {
       "script" : "script.cocoascript",
       "handler" : "setEven",
-      "shortcut" : "ctrl alt e",
-      "name" : "Even",
+      "shortcut" : "ctrl alt shift e",
+      "name" : "1:1",
       "identifier" : "even"
     },
     {
       "script" : "script.cocoascript",
       "handler" : "setHalf",
-      "shortcut" : "",
-      "name" : "Half",
+      "shortcut" : "ctrl alt shift h",
+      "name" : "2:1",
       "identifier" : "half"
     },
     {
       "script" : "script.cocoascript",
       "handler" : "setThreeQuarters",
-      "shortcut" : "",
-      "name" : "Three Quarters",
+      "shortcut" : "ctrl alt shift j",
+      "name" : "4:3",
       "identifier" : "threequarters"
     },
     {
       "script" : "script.cocoascript",
       "handler" : "setWidescreen",
-      "shortcut" : "",
-      "name" : "Widescreen",
+      "shortcut" : "ctrl alt shift k",
+      "name" : "16:9",
       "identifier" : "widescreen"
     },
     {
       "script" : "script.cocoascript",
       "handler" : "setCustom",
-      "shortcut" : "ctrl alt shift e",
+      "shortcut" : "ctrl alt shift l",
       "name" : "Parse Layer Name",
       "identifier" : "setcustom"
     }
