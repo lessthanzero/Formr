@@ -47,9 +47,9 @@
     ],
   },
   "identifier" : "com.example.sketch.formr",
-  "compatibleVersion": "42",
+  "compatibleVersion": 42,
   "name": "Formr",
-  "version": "2.1.2",
+  "version": 2.1.3,
   "description": "Plugin for Sketch app, helping to maintain proportions of layers and artboards",
   "keywords": [
     "sketch-app, plugin, proportion, layer, artboard, sketchapp"
@@ -58,5 +58,6 @@
   "authorEmail": "aleksandr.katin@gmail.com",
   "license": "MIT",
   "homepage": "https://github.com/lessthanzero/Formr",
-  "repository": "https://github.com/lessthanzero/Formr.git"
+  "repository": "https://github.com/lessthanzero/Formr.git",
+  "updateURL": "https://github.com/downloads/example/sketchplugins/sketchplugins.json"
 }
