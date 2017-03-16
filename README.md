@@ -9,7 +9,7 @@ You can also use custom proportions by adding `::prop` to the layer/artboard nam
 
 *Formr* supports layers, artboards, and multiple selection.  
 
-__Works with Sketch 40+__
+__Works with Sketch 42+__
 
 ## Shortcuts  
 
@@ -26,6 +26,9 @@ For other options, as for now, please use plugin menu.
 ![screenshot](https://github.com/lessthanzero/Formr/blob/master/screenshot.png)  
 
 ## Installation  
+
+[![Install Formr with Sketchpacks](http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png "Install Formr with Sketchpacks")](https://sketchpacks.com/lessthanzero/Formr/install)
+
 
 ### Sketch Toolbox  
 
