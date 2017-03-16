@@ -1,5 +1,4 @@
 {
-  "author" : "Alexander Katin",
   "commands" : [
     {
       "script" : "script.cocoascript",
@@ -48,9 +47,16 @@
     ],
   },
   "identifier" : "com.example.sketch.formr",
-  "version" : "1.0",
-  "compatibleVersion": "3.7",
-  "description" : "Sketch plugin that helps to maintain simple proportions of shapes",
-  "authorEmail" : "aleksandr.katin@gmail.com",
-  "name" : "Formr"
+  "compatibleVersion": "42",
+  "name": "Formr",
+  "version": "2.1.2",
+  "description": "Plugin for Sketch app, helping to maintain proportions of layers and artboards",
+  "keywords": [
+    "sketch-app, plugin, proportion, layer, artboard, sketchapp"
+  ],
+  "author": "Sasha Katin",
+  "authorEmail": "aleksandr.katin@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/lessthanzero/Formr",
+  "repository": "https://github.com/lessthanzero/Formr.git"
 }
