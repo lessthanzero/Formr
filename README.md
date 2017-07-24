@@ -9,7 +9,7 @@ You can also use custom proportions by adding `::prop` to the layer/artboard nam
 
 *Formr* supports layers, artboards, and multiple selection.  
 
-__Works with Sketch 42+__
+__Works with Sketch 45+__
 
 ## Shortcuts  
 
