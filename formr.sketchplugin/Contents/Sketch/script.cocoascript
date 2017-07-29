@@ -101,11 +101,9 @@ com.lessthanzero.extend({
             var lower = parseInt(propParts[1], 10);
             if (upper && lower) {
                 var detectedProportion = upper/lower;
-                print( "Okay! Detected proportion " + detectedProportion );
                 return detectedProportion;
             } else {
                 this.app.displayDialog_withTitle("Please, use only integers in simple fraction. Like '::1/2'", "Incorrect proportion!")
-                //print("Incorrect proportion!");
             }
 
         }
